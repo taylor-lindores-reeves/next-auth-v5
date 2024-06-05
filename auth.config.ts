@@ -4,7 +4,7 @@ import ResendProvider from "next-auth/providers/resend";
 export const config = {
 	providers: [
 		ResendProvider({
-			from: "no-reply@tlr.je",
+			from: "no-reply@example.com", // Change this to your domain!
 			normalizeIdentifier(identifier: string): string {
 				// Get the first two elements only,
 				// separated by `@` from user input.
